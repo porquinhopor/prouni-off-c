@@ -1,0 +1,99 @@
+/*! 
+ * 2019 v1.0.0 
+ * Copyright 2019.
+ */
+ ::selection {background: #2969BD; color: #fff;}
+
+
+ /* Fontes */
+ 
+ html            			{font-family: 'Montserrat', sans-serif; font-size: 16px;}
+ body            			{font-family: 'Montserrat', sans-serif;font-size: 16px;color: #222;background: #25548e;}
+ strong						{font-family: 'Montserrat', sans-serif; font-weight:700;}
+ 
+ /* Capa */
+ .capa 						{background: url(../imgages/bg-capa.jpg) no-repeat -2px -7px rgb(52,62,149);background: url(../images/bg-capa.jpg) no-repeat -2px -7px ,linear-gradient(180deg, rgba(52,62,149,1) -8%, rgba(17,139,158,1) 37%);min-height: 680px;background-size: cover;}
+ .capa .container 			{max-width: 100%}
+ 
+ /* Menu */
+ .menu 						{height: 31px;background: #2b4c7f; width: 100% ; display: block; font-size: 0.7em; color: #fff; padding-top: 6px; text-transform: uppercase;}
+ .ico-menu 					{display: none;}
+ .titulo span				{font-weight: bold}	
+ .links 						{float: right; }
+ .links ul 					{padding-left: 0px}
+ .links ul li				{list-style: none; display: inline; margin-right: 16px}
+ .links ul li:last-child 	{margin-right: 0px}
+ .links a					{color: #fff; opacity: 0.8}
+ .links a:hover  			{opacity:1; text-decoration: none; }
+	 
+ /* Logo */
+ .logo 						{width: 253px;margin: 0 auto;position: relative;top: 278px;height: 208px;background:url(../images/logo_home.png) no-repeat;display: block;z-index: 2000;}
+ .logo a 					{position: relative; z-index: 2000}
+ .logo-mobile 				{display: none;}
+ 
+ /* Categoria */
+ .categoria					{width: 340px;margin: 0 auto;border: 1px solid #fff;position: relative;top: 160px;height: 60px;font-weight: 600;text-align: center;padding-top: 18px;color: #fff;text-transform: uppercase;display: block;z-index: 2000;}
+ 
+ 
+ /* Acesso */ 
+ .acesso 					{background: rgb(0,191,138);background: linear-gradient(180deg, rgba(0,191,138,0.6) 0%, rgba(5,164,170,0.5) 100%);display: block;color: #fff;font-size: 1.1em;width: 430px;min-height: 680px;padding: 140px 50px 50px 50px;position: relative;left: -15px;}
+ .acesso p 					{margin-bottom: 2em;}
+ .acesso a 					{color: #fff; font-weight: bold}
+ .acesso .bt a				{width: 100%; display: block; background: #00B4EC; font-weight: 600; font-size: 0.86em; text-transform: uppercase; text-align: center; padding: 18px 0px 18px 0px; border-radius: 60px; transition: all 0.3s ease }
+ .acesso .bt a:hover 		{text-decoration: none; background: #25548E}
+ 
+ /* Logo footer */
+ #governo-federal 				{display: block;width: 100%;min-height: 90px !important;padding: 0px;background: #25548E;/* position: fixed; */bottom: 0px;}
+ #governo-federal .logo-mec-gov  {width: 339px; display: block; margin:0 auto; padding-top:16px;}
+ 
+ .versao                         {text-align: right;color: #fff; font-size: 12px;}
+.bolder							{font-weight: bolder;}
+#close			{cursor: pointer;position: absolute;margin-top: -1rem !important;color: #630303;padding: 10px 16px;transform: translate(0%, -50%);}
+#fade     		{position: absolute;top: 0;left:0;display: none;height: 100%;width: 100%;background-color: rgba(0,0,0,0.23);align-items: center;justify-content: center;z-index: 2010;}
+#ctnModal 		{width: fit-content;top: 0;display: flex;flex-direction: column;background-color: #fbbdbd;border-radius: 6px;padding: 2rem;font-size: 1.3rem;font-weight: 100;box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.23);}
+#fecharModal	{display: flex;justify-content: flex-end;padding: 7px;}
+#close 			{cursor: pointer;}
+#tituloModal 	{display: flex;justify-content: center;padding: 7px;color: #666;font-size: 18px;}
+.tour-img       {z-index: 99999;}
+ /* RESPONSIVIDADE ----------------------------------- */
+ /* Large desktops and laptops */
+ 
+ @media (min-width: 1200px){
+	 .container {max-width: 100%;}	
+ }
+ 
+ @media (max-width: 1120px){
+ .acesso .bt a				{  }
+ .logo 						{left: 60px}
+		 
+ }
+ 
+ @media (min-width: 992px){
+ .container {max-width: 100%;}
+ 
+ }
+ 
+ @media (min-width: 768px){
+ .container {max-width: 100%;}
+ }
+ 
+ @media (max-width: 767px){
+ .capa 		{height: auto; position: relative;}
+ .logo 		{height: 100px;position: absolute;top: -877px;}
+ .titulo 	{display: none;}
+ .acesso 	{width: 100%;height: auto;left: 0px;border-radius: 5px;margin: 174px 0px 30px 0px;padding-top: 30px;}
+ .categoria  {top: -790px}
+ /* Menu  mobile */
+ .mobile 					{display: block;}
+ .mobile ul 		    		{padding-top: 12px; text-align: left; }	 
+ .mobile ul li 				{display: block; list-style: none; margin-right: 20px; width: 100%; margin-bottom: 10px}
+ .mobile ul li:last-child	{ margin-right: 0px}
+ .mobile .links 				{float: none;}
+ .menu 						{ height: 170px; position: absolute; left: -500px; background: #fff;  transition: all 0.3s ease;  z-index: 3000; box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.57) }
+ .menu a 					{color: #08665d}	
+ .ico-menu 					{display: block; position: relative;  background: #2e487b;}
+ .ico-menu a					{color: #fff; padding-left: 15px; font-size: 0.8em; position: relative; top: -2px}
+ .exibir-menu-mobile 		{left: 0px}
+ }
+ 
+ 
